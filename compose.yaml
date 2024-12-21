@@ -1,0 +1,13 @@
+services:
+  negativos:
+    image: negativos:latest
+    container_name: negativos
+    ports:
+      - "19870:9876"
+    restart: always
+    deploy:
+        resources:
+          limits:
+            memory: 250M
+
+
