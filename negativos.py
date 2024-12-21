@@ -59,3 +59,10 @@ if uploaded_files:
                 st.markdown(download_button_html, unsafe_allow_html=True)
         else:
             st.warning(f"El archivo {uploaded_file.name} no es una imagen válida. Los formatos soportados son: png, jpg, jpeg.")
+
+ # Footer with author info (using semantic HTML <footer>)
+st.markdown("""
+    <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 10px;">
+        <p style="margin: 0;">Creado por: Cayetano Simón Paradiso - Paradisoft | <a href="https://github.com/CSParadiso/negativos" target="_blank" style="color: white;">@CSParadiso</a></p>
+    </footer>
+""", unsafe_allow_html=True)

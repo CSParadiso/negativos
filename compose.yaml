@@ -1,6 +1,6 @@
 services:
   negativos:
-    image: negativos:latest
+    image: csparadiso/negativos:0.0.1
     container_name: negativos
     ports:
       - "19870:9876"
